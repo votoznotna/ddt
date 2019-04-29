@@ -1,0 +1,25 @@
+{
+  "name": "recruitment-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/start.js",
+    "server": "npm start",
+    "client": "npm run start --prefix client",
+    "install-client": "npm install --prefix client",
+    "test": "npm run test --prefix client",
+    "e2e": "concurrently \"npm run server\" \"npm run e2e --prefix client\"",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "private": true,
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^2.2.3",
+    "get-port": "^3.2.0",
+    "koa": "^2.3.0",
+    "koa-body": "^4.1.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^4.0.1"
+  }
+}
