@@ -3,7 +3,7 @@ const BASE_URL = `/api/v1/books`;
 const books = require('../static/books.json');
 const router = new Router();
 
-router.get(BASE_URL, async (ctx) => {
+router.get(BASE_URL, (ctx) => {
     try {
         ctx.body = books;
         ctx.status = 200;

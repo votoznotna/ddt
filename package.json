@@ -15,11 +15,14 @@
   "private": true,
   "license": "ISC",
   "dependencies": {
-    "@koa/cors": "^2.2.3",
-    "get-port": "^3.2.0",
-    "koa": "^2.3.0",
+    "@koa/cors": "^3.0.0",
+    "get-port": "^5.0.0",
+    "koa": "^2.7.0",
     "koa-body": "^4.1.0",
     "koa-router": "^7.4.0",
-    "koa-static": "^4.0.1"
+    "koa-static": "^5.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0"
   }
 }
